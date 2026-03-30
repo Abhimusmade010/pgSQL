@@ -92,3 +92,6 @@ CREATE TABLE players (
     photo_url TEXT,
     is_captain BOOLEAN DEFAULT FALSE
 );
+
+ ALTER table players
+ Add colleges_id INT REFERENCES colleges(college_id);
